@@ -1,0 +1,72 @@
+This is conf setting for example.
+
+{
+"pools" : [
+    {
+        "poolname" : "neoscrypt",
+        "url" : "stratum+tcp://hub.miningpoolhub.com:12012",
+        "user" : "username.workername",
+        "pass" : "x",
+        "algorithm" : "neoscrypt"
+    },
+    {
+        "poolname" : "x15",
+        "url" : "stratum+tcp://hub.miningpoolhub.com:12009",
+        "user" : "username.workername",
+        "pass" : "x",
+        "algorithm" : "bitblock"
+    },
+    {
+        "poolname" : "x13",
+        "url" : "stratum+tcp://hub.miningpoolhub.com:12008",
+        "user" : "username.workername",
+        "pass" : "x",
+        "algorithm" : "marucoin-mod"
+    },
+    {
+        "poolname" : "x11",
+        "url" : "stratum+tcp://hub.miningpoolhub.com:12007",
+        "user" : "username.workername",
+        "pass" : "x",
+        "algorithm" : "darkcoin-mod"
+    },
+    {
+        "poolname" : "myriadcoin-groestl",
+        "url" : "stratum+tcp://hub.miningpoolhub.com:12005",
+        "user" : "username.workername",
+        "pass" : "x",
+        "algorithm" : "myriadcoin-groestl"
+    },
+    {
+        "poolname" : "keccak",
+        "url" : "stratum+tcp://hub.miningpoolhub.com:12003",
+        "user" : "username.workername",
+        "pass" : "x",
+        "algorithm" : "maxcoin"
+    },
+    {
+        "poolname" : "scrypt",
+        "url" : "stratum+tcp://hub.miningpoolhub.com:12001",
+        "user" : "username.workername",
+        "pass" : "x",
+        "algorithm" : "zuikkis",
+        "nfactor" : "10"
+    },
+    {
+        "poolname" : "scryptn",
+        "url" : "stratum+tcp://hub.miningpoolhub.com:12002",
+        "user" : "username.workername",
+        "pass" : "x",
+        "algorithm" : "zuikkis",
+        "nfactor" : "11"
+    }
+],
+"failover-only" : true,
+"failover-switch-delay" : "30",
+"queue" : "0"
+}
+
+
+You can set "intensity", "gpu-engine", "gpu-memclock", "gpu-powertune", "worksize", "nfactor", "thread-concurrency" for each algorithm pool.
+(Set the most frequently mining algorithm to the front of list. It helps coin switching efficiency a little)
+
